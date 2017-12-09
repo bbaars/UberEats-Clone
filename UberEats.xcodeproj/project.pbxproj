@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0972BF6B0566FCB89581AB /* Pods_UberEats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6063A6E1CAD41EEA8B3A4C /* Pods_UberEats.framework */; };
+		CAB85A371FDC848A008FFB9B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB85A361FDC848A008FFB9B /* CartViewController.swift */; };
+		CAB85A391FDC960D008FFB9B /* TrackOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB85A381FDC960D008FFB9B /* TrackOrderViewController.swift */; };
 		CAFCD5581FDB56BD009254F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCD5571FDB56BD009254F5 /* AppDelegate.swift */; };
 		CAFCD55A1FDB56BD009254F5 /* RestaurantListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCD5591FDB56BD009254F5 /* RestaurantListingTableViewController.swift */; };
 		CAFCD55D1FDB56BD009254F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFCD55B1FDB56BD009254F5 /* Main.storyboard */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A30C34AAA560C5297E77109 /* Pods-UberEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberEats/Pods-UberEats.debug.xcconfig"; sourceTree = "<group>"; };
+		4E6063A6E1CAD41EEA8B3A4C /* Pods_UberEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AD59E2E127031DB7CC2761 /* Pods-UberEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberEats/Pods-UberEats.release.xcconfig"; sourceTree = "<group>"; };
+		CAB85A361FDC848A008FFB9B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		CAB85A381FDC960D008FFB9B /* TrackOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderViewController.swift; sourceTree = "<group>"; };
 		CAFCD5541FDB56BD009254F5 /* UberEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFCD5571FDB56BD009254F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFCD5591FDB56BD009254F5 /* RestaurantListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListingTableViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0972BF6B0566FCB89581AB /* Pods_UberEats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144EBD2956E4B883BC5E6939 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E6063A6E1CAD41EEA8B3A4C /* Pods_UberEats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45D873A0AF908C27BD155C69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C34AAA560C5297E77109 /* Pods-UberEats.debug.xcconfig */,
+				A4AD59E2E127031DB7CC2761 /* Pods-UberEats.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CAFCD54B1FDB56BD009254F5 = {
 			isa = PBXGroup;
 			children = (
 				CAFCD5561FDB56BD009254F5 /* UberEats */,
 				CAFCD5551FDB56BD009254F5 /* Products */,
+				45D873A0AF908C27BD155C69 /* Pods */,
+				144EBD2956E4B883BC5E6939 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +117,8 @@
 				CAFCD5591FDB56BD009254F5 /* RestaurantListingTableViewController.swift */,
 				CAFCD5701FDBA7E6009254F5 /* MealsTableViewController.swift */,
 				CAFCD5721FDBB175009254F5 /* MealDetailViewController.swift */,
+				CAB85A361FDC848A008FFB9B /* CartViewController.swift */,
+				CAB85A381FDC960D008FFB9B /* TrackOrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -100,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAFCD5661FDB56BD009254F5 /* Build configuration list for PBXNativeTarget "UberEats" */;
 			buildPhases = (
+				441248FECE33B2CDDB4CCD38 /* [CP] Check Pods Manifest.lock */,
 				CAFCD5501FDB56BD009254F5 /* Sources */,
 				CAFCD5511FDB56BD009254F5 /* Frameworks */,
 				CAFCD5521FDB56BD009254F5 /* Resources */,
+				A061923B14DAD69A6217CDAE /* [CP] Embed Pods Frameworks */,
+				D0C3A736078DA0B701741E4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +194,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		441248FECE33B2CDDB4CCD38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A061923B14DAD69A6217CDAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberEats/Pods-UberEats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C3A736078DA0B701741E4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberEats/Pods-UberEats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CAFCD5501FDB56BD009254F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -168,8 +249,10 @@
 			files = (
 				CAFCD55A1FDB56BD009254F5 /* RestaurantListingTableViewController.swift in Sources */,
 				CAFCD5581FDB56BD009254F5 /* AppDelegate.swift in Sources */,
+				CAB85A391FDC960D008FFB9B /* TrackOrderViewController.swift in Sources */,
 				CAFCD5711FDBA7E6009254F5 /* MealsTableViewController.swift in Sources */,
 				CAFCD5731FDBB175009254F5 /* MealDetailViewController.swift in Sources */,
+				CAB85A371FDC848A008FFB9B /* CartViewController.swift in Sources */,
 				CAFCD56E1FDB6882009254F5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +388,7 @@
 		};
 		CAFCD5671FDB56BD009254F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A30C34AAA560C5297E77109 /* Pods-UberEats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -323,6 +407,7 @@
 		};
 		CAFCD5681FDB56BD009254F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AD59E2E127031DB7CC2761 /* Pods-UberEats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
