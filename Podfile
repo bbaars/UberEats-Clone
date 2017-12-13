@@ -9,6 +9,20 @@ target 'UberEats' do
 
   # Pods for UberEats
   pod 'Stripe'
-
+  
+  # Pods JSON
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'SwiftyJSON'
+  
+  # Pods for Firebase
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  
+  # Pods for Facebook
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
 
 end

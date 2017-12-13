@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2F0972BF6B0566FCB89581AB /* Pods_UberEats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6063A6E1CAD41EEA8B3A4C /* Pods_UberEats.framework */; };
+		CA0757961FDF5871004F8CFE /* FBLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0757951FDF5871004F8CFE /* FBLoginManager.swift */; };
+		CA0757981FE0A1DB004F8CFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0757971FE0A1DB004F8CFE /* LoginViewController.swift */; };
 		CAB85A371FDC848A008FFB9B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB85A361FDC848A008FFB9B /* CartViewController.swift */; };
 		CAB85A391FDC960D008FFB9B /* TrackOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB85A381FDC960D008FFB9B /* TrackOrderViewController.swift */; };
+		CAB85A3B1FDCA1E2008FFB9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAB85A3A1FDCA1E2008FFB9B /* GoogleService-Info.plist */; };
+		CAB85A3E1FDCA3E6008FFB9B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB85A3D1FDCA3E6008FFB9B /* User.swift */; };
 		CAFCD5581FDB56BD009254F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCD5571FDB56BD009254F5 /* AppDelegate.swift */; };
 		CAFCD55A1FDB56BD009254F5 /* RestaurantListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCD5591FDB56BD009254F5 /* RestaurantListingTableViewController.swift */; };
 		CAFCD55D1FDB56BD009254F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFCD55B1FDB56BD009254F5 /* Main.storyboard */; };
@@ -24,8 +28,12 @@
 		3A30C34AAA560C5297E77109 /* Pods-UberEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberEats/Pods-UberEats.debug.xcconfig"; sourceTree = "<group>"; };
 		4E6063A6E1CAD41EEA8B3A4C /* Pods_UberEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AD59E2E127031DB7CC2761 /* Pods-UberEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberEats/Pods-UberEats.release.xcconfig"; sourceTree = "<group>"; };
+		CA0757951FDF5871004F8CFE /* FBLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginManager.swift; sourceTree = "<group>"; };
+		CA0757971FE0A1DB004F8CFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CAB85A361FDC848A008FFB9B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		CAB85A381FDC960D008FFB9B /* TrackOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderViewController.swift; sourceTree = "<group>"; };
+		CAB85A3A1FDCA1E2008FFB9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAB85A3D1FDCA3E6008FFB9B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CAFCD5541FDB56BD009254F5 /* UberEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFCD5571FDB56BD009254F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFCD5591FDB56BD009254F5 /* RestaurantListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListingTableViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CAB85A3C1FDCA3D6008FFB9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAB85A3D1FDCA3E6008FFB9B /* User.swift */,
+				CA0757951FDF5871004F8CFE /* FBLoginManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CAFCD54B1FDB56BD009254F5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CAFCD56D1FDB5F0B009254F5 /* SWReveal */,
+				CAB85A3C1FDCA3D6008FFB9B /* Model */,
 				CAFCD56F1FDBA2D2009254F5 /* Controllers */,
 				CAFCD5571FDB56BD009254F5 /* AppDelegate.swift */,
 				CAFCD55B1FDB56BD009254F5 /* Main.storyboard */,
@@ -98,6 +116,7 @@
 				CAFCD5601FDB56BD009254F5 /* LaunchScreen.storyboard */,
 				CAFCD5691FDB5EEE009254F5 /* UberEats-Bridging-Header.h */,
 				CAFCD5631FDB56BD009254F5 /* Info.plist */,
+				CAB85A3A1FDCA1E2008FFB9B /* GoogleService-Info.plist */,
 			);
 			path = UberEats;
 			sourceTree = "<group>";
@@ -119,6 +138,7 @@
 				CAFCD5721FDBB175009254F5 /* MealDetailViewController.swift */,
 				CAB85A361FDC848A008FFB9B /* CartViewController.swift */,
 				CAB85A381FDC960D008FFB9B /* TrackOrderViewController.swift */,
+				CA0757971FE0A1DB004F8CFE /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFCD5621FDB56BD009254F5 /* LaunchScreen.storyboard in Resources */,
+				CAB85A3B1FDCA1E2008FFB9B /* GoogleService-Info.plist in Resources */,
 				CAFCD55F1FDB56BD009254F5 /* Assets.xcassets in Resources */,
 				CAFCD55D1FDB56BD009254F5 /* Main.storyboard in Resources */,
 			);
@@ -251,8 +272,11 @@
 				CAFCD5581FDB56BD009254F5 /* AppDelegate.swift in Sources */,
 				CAB85A391FDC960D008FFB9B /* TrackOrderViewController.swift in Sources */,
 				CAFCD5711FDBA7E6009254F5 /* MealsTableViewController.swift in Sources */,
+				CAB85A3E1FDCA3E6008FFB9B /* User.swift in Sources */,
 				CAFCD5731FDBB175009254F5 /* MealDetailViewController.swift in Sources */,
 				CAB85A371FDC848A008FFB9B /* CartViewController.swift in Sources */,
+				CA0757961FDF5871004F8CFE /* FBLoginManager.swift in Sources */,
+				CA0757981FE0A1DB004F8CFE /* LoginViewController.swift in Sources */,
 				CAFCD56E1FDB6882009254F5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
